@@ -1,0 +1,119 @@
+:root{
+  --cor-fundo: #FFFDF6;
+  --verde-escuro: #5F6F52;
+  --verde-fonte: #294B29;
+  --verde-claro: #A9B388;
+  --marrom: #B99470;
+  --marrom-claro: #FEFAE0;
+  
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--verde-fonte);
+}
+
+.cabecalho {
+  background-color: var(--cor-fundo);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--marrom);
+ 
+}
+
+.cabecalho-menu-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--verde-escuro);
+  font-weight: bold;
+  padding: 2px;
+}
+
+.florbranca-img {
+  height: 50px;
+  object-fit: contain;
+}
+
+.apresentacao {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: var(--cor-fundo);
+}
+
+.logo-img{
+    height: 80%;
+    object-fit: contain;
+}
+
+.apresentacao-titulo {
+  font-size: 2.5rem;
+  color: var(--verde-escuro);
+}
+
+.apresentacao-paragrafo {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: var(--verde-fonte)
+}
+
+.apresentacao-botao {
+  background-color: var(--verde-escuro);
+  color: var(--marrom-claro);
+  padding: 15px 30px;
+  border: 1px solid var(--marrom);
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px var(--verde-claro);
+ 
+}
+
+.apresentacao-botao:active{
+  background-color: var(--verde-claro);
+  color: var(--verde-fonte);
+}
+
+.apresentacao-subtitulo {
+  text-align: center;
+  margin: 50px 0 20px;
+  font-size: 1.8rem;
+  color: var(--verde-fonte);
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 40px 60px;
+}
+
+.produto-card {
+  border: 1px solid var(--marrom);
+  border-radius: 12px;
+  padding: 5px;
+  text-align: center;
+  background-color: var(--cor-fundo);
+  box-shadow: 2px 2px 8px var(--verde-claro);
+}
+
+.produto-img {
+  width: 50%;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.produto-titulo {
+  margin: 10px 0;
+}
+
+.rodape {
+  text-align: center;
+  padding: 30px;
+  background-color: var(--cor-fundo);
+  color: var(--verde-fonte);
+  font-size: 0.9rem;
+}
